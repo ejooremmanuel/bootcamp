@@ -10,7 +10,7 @@ export const createUser = async (
 ) => {
   try {
     await axios
-      .post("/api/v1/user/create", data, {
+      .post("https://bootcampback.herokuapp.com/api/v1/user/create", data, {
         "Content-Type": "application/json",
       })
       .then((response) => {
