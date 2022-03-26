@@ -1,0 +1,244 @@
+.invitation__container {
+  display: flex;
+  width: 80%;
+  height: 30vh;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 30px;
+  color: #fff;
+}
+.invitation__container p {
+  text-align: left;
+}
+.invitation__container__contain {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+.invitation__telegram {
+  background: #db4437;
+}
+.invitation__mail {
+  box-shadow: 1px 5px 1px #db4437;
+  border: 1px solid #db4437;
+}
+.invitation__mail > h2 {
+  color: #000;
+}
+.invitation__mail > p {
+  color: #000;
+}
+
+.invite__button {
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+.invite__button input {
+  box-shadow: 1px 2px 1px #000;
+  width: 260px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  height: 45px;
+}
+
+.invite__button button {
+  background: #000;
+}
+
+footer {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+.invitation__container {
+  display: flex;
+  width: 80%;
+  height: 40%;
+  margin: 10px auto;
+  align-items: center;
+  justify-content: center;
+  grid-gap: 30px;
+  color: #fff;
+}
+.invitation__container p {
+  text-align: left;
+}
+.invitation__container__contain {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  align-items: flex-start;
+}
+.invitation__telegram {
+  background: #db4437;
+}
+.invitation__mail {
+  box-shadow: 1px 5px 1px #db4437;
+  border: 1px solid #db4437;
+}
+.invitation__mail > h2 {
+  color: #000;
+}
+.invitation__mail > p {
+  color: #000;
+}
+
+.invite__button {
+  display: flex;
+  justify-content: flex-start;
+  grid-gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+.invite__button input {
+  box-shadow: 1px 2px 1px #000;
+  width: 260px;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px 10px;
+  height: 45px;
+}
+
+::placeholder {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.invite__button button {
+  background: #000;
+}
+
+footer {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin: 0 auto;
+  height: 60px;
+}
+.footer__details {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  grid-gap: 40px;
+}
+.footer__credit {
+  flex: 1;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
+.footer__links {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  grid-gap: 10px;
+  /* margin: 0 auto; */
+}
+.footer__links a {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #fff;
+  color: #000;
+}
+
+.modal__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 35vw;
+  height: 60vh;
+}
+.modal__container button {
+  width: 20vw;
+  background: #000;
+}
+.modal__container input {
+  width: 20vw;
+  height: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 40px;
+  width: 70%;
+  height: 100%;
+  margin: 10px auto;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  .invitation__container {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .modal__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80vw;
+    height: 60vh;
+    padding: 2rem;
+  }
+  .modal__container input {
+    width: 60vw;
+  }
+  .modal__container button {
+    width: 60vw;
+  }
+  .modal__container h4 {
+    font-size: medium;
+  }
+  .modal__container label {
+    font-size: medium;
+  }
+
+  ::placeholder {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .footer__credit span:nth-of-type(2) {
+    display: none;
+  }
+
+  .footer__credit {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .invitation__mail > .invite__button {
+    flex-direction: column;
+  }
+  .invitation__mail > .invite__button > input {
+    width: 90%;
+  }
+}

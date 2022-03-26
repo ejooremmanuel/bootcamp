@@ -7,6 +7,18 @@
   pointer-events: none;
 }
 
+.carousel {
+  width: 100vw;
+  height: 100vh;
+  background: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -28,11 +40,266 @@
   color: #61dafb;
 }
 
+.landing__container {
+  width: 100vw;
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background-color: #282c34;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 10px #282c34;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  z-index: 99;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav__items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  grid-gap: 20px;
+  flex: 1;
+}
+
+.brand {
+  flex: 1;
+}
+
+.landing__content {
+  display: flex;
+  width: 70vw;
+  height: 60vh;
+  margin: 40px auto;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.landing__content__0 {
+  display: flex;
+  width: 70vw;
+  height: 60vh;
+  margin: 5px auto;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.landing__content__1 {
+  display: flex;
+  width: 80vw;
+  height: 60vh;
+  margin: 5px auto;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.landing__content h2 {
+  text-align: left;
+  line-height: 2rem;
+}
+.landing__content__1 h2 {
+  text-align: left;
+  line-height: 2rem;
+}
+.landing__content__1 p {
+  text-align: left;
+  line-height: 2rem;
+  padding-right: 20px;
+}
+.landing__content__1 div {
+  justify-self: flex-start;
+}
+.landing__content div {
+  justify-self: flex-start;
+}
+.what__we__do {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+button {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  /* padding: 5px; */
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  height: 50px;
+}
+.invite__button a {
+  background-color: #000;
+  color: white;
+  border: none;
+  /* padding: 5px; */
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 200px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__holder {
+  align-self: flex-start;
+  width: 100%;
+  height: 100%;
+  justify-self: flex-start;
+  display: flex;
+}
+
+.heading {
+  position: relative;
+  font-weight: 600;
+  /* z-index: 1; */
+}
+
+/* .container__content__1 {
+  height: 70vh;
+}
+
+.container__content__2 {
+  height: 30vh;
+} */
+
+.registration {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 80px auto;
+  justify-content: space-between;
+}
+
+input[type="text"] {
+  width: 60%;
+  height: 25%;
+  border-radius: 10px;
+  outline: none;
+  padding: 20px 20px;
+}
+
+.radio__input {
+  display: flex;
+  grid-gap: 30px;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  height: 80% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+}
+form div {
+  width: 100%;
+  /* height: 80%; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .landing__content__1 {
+    flex-direction: column;
+  }
+
+  .landing__content {
+    flex-direction: column;
+    width: 70vw;
+    height: 80%;
+    margin: 250px auto;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  button {
+    width: 170px;
+    font-size: medium;
+  }
+  .what__we__do {
+    display: none;
+  }
+
+  img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  button {
+    width: 150px;
+    font-size: small;
+  }
+  .what__we__do {
+    display: none;
+  }
+  .landing__content {
+    display: flex;
+    width: 70vw;
+    height: 60vh;
+    margin: 60px auto;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .landing__content__1 {
+    display: flex;
+    width: 100vw;
+    height: 60vh;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  input[type="text"] {
+    width: 90%;
+    height: 25%;
+    border-radius: 10px;
+    outline: none;
+    padding: 20px 20px;
   }
 }
